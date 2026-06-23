@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded",function(){
             
             const response = await fetch(proxyUrl+targetUrl, requestOptions);
             if(!response.ok){
-                throw new Error("Unable to fetch the user details");
+                throw new Error("Unable to fetch  user details");
             }
             const parsedData = await response.json();
             console.log("Logging data: ", data);
